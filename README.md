@@ -13,8 +13,7 @@ This project demonstrates the end-to-end process of developing, training, and de
 - [Deploying the API with Docker](#deploying-the-api-with-docker)
 - [Results](#results)
 - [Docker Images](#docker-images)
-- [Future Improvements](#future-improvements)
-- [License](#license)
+
 
 ## Introduction
 This project uses a machine learning model to classify ECG (Electrocardiogram) data into normal or abnormal categories. The entire workflow, from training to deployment, is containerized with Docker to ensure:
@@ -58,7 +57,7 @@ This project uses a machine learning model to classify ECG (Electrocardiogram) d
 ## Setup and Usage
 
 ### Prerequisites
-- Install Docker and Docker Compose on your machine.
+- Install Docker on your machine.
 
 ### Training the Model in Docker
 1. Build the training Docker image:
@@ -80,7 +79,7 @@ docker build -t ecg-api -f a.Dockerfile .
 ```bash
 docker run -p 3000:3000 ecg-api
 ```
-". Access the API:
+3. Access the API:
 - Open your browser or use tools like Postman to access http://localhost:3000
 - Use the HTML interface to upload a JSON file for predictions
 ### Results
@@ -93,8 +92,8 @@ Containerized Environment:
 ### Docker Images
 The following images are available on Docker Hub:
 
-1. Training Image: (ECG Training Environment)[https://hub.docker.com/r/oussamalatardo/lafdil_oussama_env]
-2. Deployment Image: (ECG API Environment)[https://hub.docker.com/r/oussamalatardo/lafdil_oussama_dep]
+1. Training Image: [ECG Training Environment](https://hub.docker.com/r/oussamalatardo/lafdil_oussama_env)
+2. Deployment Image: [ECG API Environment](https://hub.docker.com/r/oussamalatardo/lafdil_oussama_dep)
 
 To pull these images:
 
